@@ -8,7 +8,7 @@
 <body>
     <style>
         body{
-    background: linear-gradient(45deg,#0f0a0a, white);
+    background: linear-gradient(45deg, black, red 70%, black);
     height: 100vh;
 }
 .header{
@@ -25,18 +25,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins";
+    font-family: monospace;
     color: black;
     text-decoration: none;
+}
+h2{
+    text-shadow: black 1px 5px 2px;
+    color: white;
+}
+p{
+    text-shadow: 1px 2px 4px;
+    color: ghostwhite;
 }
 .header .logo{
     font-size: 20px;
     font-weight: 600;
 }
 .header .navbar a{
+    color: orangered;
+    text-shadow: black  0 0 5px;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 30px;
+    margin-left: 0 auto;
     position: relative;
     padding: 10px 15px;
     z-index: 1;
@@ -46,7 +56,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: white;
+    background: rgb(236, 122, 15);
     box-shadow: 0 0 5px #0f0a0a, inset 0 0 5px #0f0a0a;
     height: 100%;
     width: 100%;
@@ -58,16 +68,38 @@
 .navbar a:hover::before{
     scale: 1;
 }
+.home{
+    display: flex;
+    height: 100vh;
+    padding: 10rem 9% 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.home img{
+    height: 700px; 
+}
     </style>
     <header class="header">
-    <a href="#" class="logo">Renz</a>
+    <a href="#" class="logo">Developer: Christian Renz</a>
     <nav class="navbar">
         <a href="#">Home</a>
-        <a href="#">My Project</a>
+        <a href="My project.html">My Project</a>
         <a href="#">About</a>
         <a href="#">Hobbies</a>
         <a href="#">Contact</a>
-    </header>
     </nav>
+    </header>
+    <section class="home">
+        <div class="text-content">
+            <h2>Under Development</h2>
+            <h2>Marvel Universe: Explore the Extraordinary - Where Heroes Rise, Villains Fall, and Adventure Knows No Limits</h2>
+            <p>Embark on an exhilarating journey into the Marvel Universe, where extraordinary heroes, formidable villains, and epic adventures collide! Explore the unparalleled world of Marvel Comics, renowned for its iconic characters like Spider-Man, Iron Man, Captain America, and the mighty Avengers. Immerse yourself in captivating narratives that seamlessly blend action, humor, and drama. Unearth the rich tapestry of interconnected stories that span galaxies, dimensions, and time itself.</p>
+            <div class="button">
+                <button class="btn">Follow</button>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+        <img src="Spider.png" alt="">
+    </section>
 </body>
 </html>
